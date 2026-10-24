@@ -1,10 +1,10 @@
 {
   "id": "anime-torrents",
-  "name": "Anime Torrents (AniList + Nyaa)",
-  "version": "2.0.0",
+  "name": "Anime Torrents (Nyaa)",
+  "version": "2.0.2",
   "apiVersion": 11,
   "author": "LifReizei",
-  "description": "Catálogo de anime con carátulas y sinopsis. Al reproducir, busca el torrent en Nyaa y lo abre en tu app externa (Torcino, LibreTorrent).",
+  "description": "Catálogo de anime con carátulas. Al reproducir, busca el torrent en Nyaa y lo abre en tu app externa.",
   "langs": ["es", "en"],
   "nsfw": false,
   "entry": "plugin.js",
@@ -18,25 +18,15 @@
   },
   "settings": [
     {
-      "key": "external_section",
-      "label": "Aplicación externa",
-      "type": "section"
-    },
-    {
       "key": "external_app",
-      "label": "Proveedor Torrent",
+      "label": "App para abrir Torrents",
       "type": "select",
       "default": "com.kino.torcino",
       "options": [
         { "value": "com.kino.torcino", "label": "Torcino" },
-        { "value": "org.proninyaroslav.libretorrent", "label": "LibreTorrent" }
+        { "value": "org.proninyaroslav.libretorrent", "label": "LibreTorrent" },
+        { "value": "com.bittorrent.client", "label": "BitTorrent" }
       ]
-    },
-    {
-      "key": "quality_section",
-      "label": "Calidad de descarga",
-      "type": "section",
-      "hint": "Se usará para buscar el torrent en Nyaa"
     },
     {
       "key": "preferred_quality",
@@ -44,7 +34,7 @@
       "type": "select",
       "default": "1080p",
       "options": [
-        { "value": "1080p", "label": "1080p" },
+        { "value": "1080p", "label": "1080p (Recomendado)" },
         { "value": "720p", "label": "720p" },
         { "value": "2160p", "label": "4K (2160p)" }
       ]
@@ -53,11 +43,11 @@
       "key": "preferred_audio",
       "label": "Audio preferido",
       "type": "select",
-      "default": "",
+      "default": "any",
       "options": [
-        { "value": "", "label": "Cualquiera" },
+        { "value": "any", "label": "Cualquier idioma" },
         { "value": "Dual Audio", "label": "Dual Audio (Latino/Inglés)" },
-        { "value": "English", "label": "Inglés" }
+        { "value": "English", "label": "Solo Inglés" }
       ]
     }
   ]
