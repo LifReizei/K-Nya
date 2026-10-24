@@ -3,7 +3,7 @@
   "name": "Anime Torrents (AniList + Nyaa)",
   "version": "2.0.0",
   "apiVersion": 11,
-  "author": "TuNombre",
+  "author": "LifReizei",
   "description": "Catálogo de anime con carátulas y sinopsis. Al reproducir, busca el torrent en Nyaa y lo abre en tu app externa (Torcino, LibreTorrent).",
   "langs": ["es", "en"],
   "nsfw": false,
