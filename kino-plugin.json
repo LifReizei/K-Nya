@@ -1,18 +1,21 @@
 {
   "id": "anime-torrents",
   "name": "Anime Torrents (Nyaa)",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "apiVersion": 11,
   "author": "LifReizei",
-  "description": "Catálogo de anime con carátulas. Al reproducir, busca el torrent en Nyaa y lo abre en tu app externa.",
+  "description": "Catálogo con carátulas y menú de pestañas. Busca en Nyaa y abre el magnet en tu app externa.",
   "langs": ["es", "en"],
   "nsfw": false,
   "entry": "plugin.js",
   "color": "#02A9FF",
   "categories": ["anime"],
+  "section": {
+    "label": "Anime Torrents"
+  },
   "hosts": ["graphql.anilist.co", "nyaa.si"],
   "streamHosts": "any",
-  "capabilities": ["home", "search", "episodes", "resolve", "externalResolve"],
+  "capabilities": ["home", "section", "search", "episodes", "resolve", "externalResolve"],
   "externalResolver": {
     "package": "com.kino.torcino"
   },
@@ -46,7 +49,7 @@
       "default": "any",
       "options": [
         { "value": "any", "label": "Cualquier idioma" },
-        { "value": "Dual Audio", "label": "Dual Audio (Latino/Inglés)" },
+        { "value": "Dual Audio", "label": "Dual Audio" },
         { "value": "English", "label": "Solo Inglés" }
       ]
     }
