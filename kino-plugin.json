@@ -1,7 +1,7 @@
 {
   "id": "anime-torrents",
   "name": "Anime Torrents (Nyaa)",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "apiVersion": 11,
   "author": "LifReizei",
   "description": "Catálogo con carátulas y menú de pestañas. Busca en Nyaa y abre el magnet en tu app externa.",
@@ -19,8 +19,7 @@
     "home",
     "search",
     "episodes",
-    "resolve",
-    "externalResolve"
+    "resolve"
   ],
   "externalResolver": {
     "package": "com.kino.torcino"
