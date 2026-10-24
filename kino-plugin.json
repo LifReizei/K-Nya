@@ -15,12 +15,7 @@
   },
   "hosts": ["graphql.anilist.co", "nyaa.si"],
   "streamHosts": "any",
-  "capabilities": [
-    "home",
-    "search",
-    "episodes",
-    "resolve"
-  ],
+  "capabilities": ["home", "section", "search", "episodes", "resolve", "externalResolve"],
   "externalResolver": {
     "package": "com.kino.torcino"
   },
