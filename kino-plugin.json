@@ -29,6 +29,7 @@
         { "value": "com.kino.torcino", "label": "Torcino" },
         { "value": "org.proninyaroslav.libretorrent", "label": "LibreTorrent" },
         { "value": "com.bittorrent.client", "label": "BitTorrent" },
+        { "value": "com.magnet.tvplayer", "label": "Magnet TV Player" },
         { "value": "custom1", "label": "Personalizado 1 (manual)" },
         { "value": "custom2", "label": "Personalizado 2 (manual)" }
       ]
