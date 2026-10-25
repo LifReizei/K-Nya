@@ -29,22 +29,8 @@
         { "value": "com.kino.torcino", "label": "Torcino" },
         { "value": "org.proninyaroslav.libretorrent", "label": "LibreTorrent" },
         { "value": "com.bittorrent.client", "label": "BitTorrent" },
-        { "value": "com.magnet.tvplayer", "label": "Magnet TV Player" },
-        { "value": "custom1", "label": "Personalizado 1 (manual)" },
-        { "value": "custom2", "label": "Personalizado 2 (manual)" }
+        { "value": "mv.magnettv", "label": "Magnet TV Player" }
       ]
-    },
-    {
-      "key": "custom_package_1",
-      "label": "Package ID Personalizado 1 (Ej: com.mi.app)",
-      "type": "text",
-      "default": "com.example.app1"
-    },
-    {
-      "key": "custom_package_2",
-      "label": "Package ID Personalizado 2 (Ej: com.otra.app)",
-      "type": "text",
-      "default": "com.example.app2"
     },
     {
       "key": "preferred_quality",
