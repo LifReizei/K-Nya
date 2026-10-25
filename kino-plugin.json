@@ -21,7 +21,7 @@
     "1337x.to"
   ],
   "streamHosts": "any",
-  "capabilities": ["home", "action", "section", "search", "episodes", "resolve", "externalResolve"],
+  "capabilities": ["home", "search", "episodes", "resolve", "externalResolve"],
   "externalResolver": {
     "package": "com.kino.torcino"
   },
