@@ -1,0 +1,64 @@
+{
+  "id": "anime-torrents",
+  "name": "Anime Torrents (AniList + Nyaa)",
+  "version": "2.0.0",
+  "apiVersion": 11,
+  "author": "TuNombre",
+  "description": "Catálogo de anime con carátulas y sinopsis. Al reproducir, busca el torrent en Nyaa y lo abre en tu app externa (Torcino, LibreTorrent).",
+  "langs": ["es", "en"],
+  "nsfw": false,
+  "entry": "plugin.js",
+  "color": "#02A9FF",
+  "categories": ["anime"],
+  "hosts": ["graphql.anilist.co", "nyaa.si"],
+  "streamHosts": "any",
+  "capabilities": ["home", "search", "episodes", "resolve", "externalResolve"],
+  "externalResolver": {
+    "package": "com.kino.torcino"
+  },
+  "settings": [
+    {
+      "key": "external_section",
+      "label": "Aplicación externa",
+      "type": "section"
+    },
+    {
+      "key": "external_app",
+      "label": "Proveedor Torrent",
+      "type": "select",
+      "default": "com.kino.torcino",
+      "options": [
+        { "value": "com.kino.torcino", "label": "Torcino" },
+        { "value": "org.proninyaroslav.libretorrent", "label": "LibreTorrent" }
+      ]
+    },
+    {
+      "key": "quality_section",
+      "label": "Calidad de descarga",
+      "type": "section",
+      "hint": "Se usará para buscar el torrent en Nyaa"
+    },
+    {
+      "key": "preferred_quality",
+      "label": "Calidad preferida",
+      "type": "select",
+      "default": "1080p",
+      "options": [
+        { "value": "1080p", "label": "1080p" },
+        { "value": "720p", "label": "720p" },
+        { "value": "2160p", "label": "4K (2160p)" }
+      ]
+    },
+    {
+      "key": "preferred_audio",
+      "label": "Audio preferido",
+      "type": "select",
+      "default": "",
+      "options": [
+        { "value": "", "label": "Cualquiera" },
+        { "value": "Dual Audio", "label": "Dual Audio (Latino/Inglés)" },
+        { "value": "English", "label": "Inglés" }
+      ]
+    }
+  ]
+}
